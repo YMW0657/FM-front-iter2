@@ -21,16 +21,16 @@ export default defineConfig({
     
     proxy: {
       '^/api': {
-        //target: 'http://13.54.73.8:3000',
-        target: 'http://localhost:3000',
+        target: 'http://13.54.73.8:3000',
+        //target: 'http://localhost:3000',
         ws: false,
         changeOrigin: true,
         rewrite: path=> path.replace(/^\/api/, '')
         // autoRewrite:true, //:() => '' // {'^/api' : ''}
       },
       '^/scan-api': {
-        //target: 'http://13.54.73.8:3000/scan-api',
-        target: 'http://127.0.0.1:5000/scan-api',
+        target: 'http://13.54.73.8:3000/scan-api',
+        //target: 'http://127.0.0.1:5000/scan-api',
         ws: false,
         changeOrigin: true,
         rewrite: path=> path.replace(/^\/scan-api/, '')
