@@ -14,11 +14,11 @@ export default defineConfig({
     }
   },
   server: {
-    port: 8080, // 设置服务启动端口号
-    host: '0.0.0.0', // 设置服务启动地址
-    open: false, // 设置服务启动时是否自动打开浏览器
-    cors: true, // 允许跨域
-    // 设置代理，根据我们项目实际情况配置
+    port: 8080, 
+    host: '0.0.0.0', 
+    open: false,
+    cors: true, /
+    
     proxy: {
       '^/api': {
         //target: 'http://13.54.73.8:3000',
